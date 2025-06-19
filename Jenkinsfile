@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing the project with maven test'
-                mvn 'mvn test'
+                sh 'mvn test'
             }
             post {
                 always {
